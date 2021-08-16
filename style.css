@@ -73,11 +73,14 @@ img{
     display: block;
 }
 .mode {
-    float:right;
+    float:left;
 }
 .change {
     cursor: pointer;
-    margin-left: var(--mb-4);
+    margin-left: var(--mb-1);
+    border:3px solid var(--first-color);
+    background-color: white;
+    border-radius: 20%;
 }
 .dark{
     background-color: black;
@@ -437,6 +440,10 @@ color:var(--second-color)
 @media screen and (min-width:768px) {
     body{
         margin: 0;
+    }
+    .change {
+        cursor: pointer;
+        margin-left: var(--mb-4);
     }
     .button1{
         display: inline;
